@@ -32,7 +32,7 @@ export default {
             </ul>
         </nav>
     </div>
-</template>
+</template>                                 
 
 <style lang="scss" scoped>
     .head-cnt {
@@ -40,8 +40,8 @@ export default {
         border-bottom: 1px solid blue;
         // width: 100%;
         nav {
-            margin: auto;
             width: 80%;
+            margin: auto;
             display: flex;
             gap: 20%;
 

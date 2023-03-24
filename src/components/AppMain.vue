@@ -11,7 +11,22 @@
             {
                 img: "/img/buy-comics-merchandise.png",
                 text: "DC MERCHANDISE",
-            }
+            },
+
+            {
+                img: "/img/buy-comics-subscriptions.png",
+                text: "SUBSCRIPTION",
+            },
+
+            {
+                img: "/img/buy-comics-shop-locator.png",
+                text: "COMIC SHOP LOCATOR",
+            },
+
+            {
+                img: "/img/buy-dc-power-visa.svg",
+                text: "DC POWER VISA",
+            },
         ],
         }
     }
@@ -26,7 +41,7 @@
         <ul>
             <li v-for="oggetto in oggetti">
                 <div>
-                    {{ oggetto.img }}
+                    <img :src="oggetto.img" alt="shop-pics">
                 </div>
                 <span>{{ oggetto.text }}</span>
             </li>
@@ -45,6 +60,22 @@
         color: white;
         ul {
             display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            gap: 20px;
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+                img {
+                    width: 35px;
+                }
+                span {
+                    font-size: 10px;
+                }
+            }
         }
     }
 </style>
