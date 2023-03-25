@@ -63,6 +63,21 @@ export default {
                     font-size: 10px;
                     font-weight: bold;
                     color: rgb(68, 68, 68);
+                    position: relative;
+                }
+                li:hover {
+                    color: rgb(2, 130, 249);
+                    // border-bottom: 3px solid rgb(2, 130, 249);
+                }
+                li:hover::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -31px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 50%;
+                    height: 3px;
+                    background-color: rgb(2, 130, 249);
                 }
             }
         }
