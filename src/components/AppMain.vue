@@ -58,6 +58,7 @@
     #barra-celeste {
         background-color: rgb(0, 78, 146);
         color: white;
+        // z-index: 5;
         ul {
             display: flex;
             align-items: center;
