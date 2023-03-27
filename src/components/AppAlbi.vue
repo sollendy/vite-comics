@@ -29,6 +29,7 @@
         width: 130px;
         padding: 10px 10px;
         font-size: small;
+        // display: flex;
         img {
             width: 100%;
             height: 60%;
