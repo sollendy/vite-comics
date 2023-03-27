@@ -113,11 +113,14 @@
 
 <template>
     <div id="corpo-pagina">
+        <div class="banner-serie">
+            SERIE IN CORSO
+        </div>
         <div id="comic-cont">
             <AppAlbi v-for="albo in albi" :img="albo.thumb" :prezzo="albo.price" :serie="albo.series" :tipologia="albo.type"></AppAlbi>
-            <!-- <div class="mostra">
-                MOSTRA ALTRO
-            </div> -->
+        </div>
+        <div class="mostra">
+            MOSTRA ALTRO
         </div>
     </div>
     <div id="barra-celeste">
@@ -134,9 +137,41 @@
 
 <style lang="scss" scoped>
     #corpo-pagina {
+        padding-top: 20px;
         background-color: black;
         color: white;
+        position: relative;
+        // display: flex;
+        .banner-serie {
+            background-color: rgb(0, 78, 146);
+            font-size: 12px;
+            font-weight: bold;
+            // height: 13.5px;
+            width: 130px;
+            padding: 5px;
+            position: absolute;
+            top: -12px;
+            left: 95px;
+            text-align: center;
+        }
+        .mostra {
+            background-color: rgb(0, 78, 146);
+            width: 130px;
+            padding: 5px;
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            text-align: center;
+            // text-align: center;
+        }
         #comic-cont {
+            padding-bottom: 15px;
             width: 80%;
             margin: 0 auto;
             display: flex;
@@ -144,7 +179,6 @@
             // img {
             //     width: 100px;
             // }
-
         }
 
     }

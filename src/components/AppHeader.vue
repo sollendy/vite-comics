@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss" scoped>
     .head-cnt {
-        
+        padding: 5px 0 10px 0;
         border-bottom: 1px solid blue;
         // width: 100%;
         nav {
@@ -72,7 +72,7 @@ export default {
                 li:hover::before {
                     content: "";
                     position: absolute;
-                    bottom: -31px;
+                    bottom: -42px;
                     left: 50%;
                     transform: translateX(-50%);
                     width: 50%;
