@@ -31,13 +31,16 @@ export default {
                 </li>
             </ul>
         </nav>
+        <div id="jumbo-cnt">
+            
+        </div>
     </div>
 </template>                                 
 
 <style lang="scss" scoped>
     .head-cnt {
-        padding: 5px 0 10px 0;
-        border-bottom: 1px solid blue;
+        padding: 5px 0 0 0;
+        // border-bottom: 1px solid blue;
         // width: 100%;
         nav {
             width: 80%;
@@ -72,7 +75,7 @@ export default {
                 li:hover::before {
                     content: "";
                     position: absolute;
-                    bottom: -42px;
+                    top: 192%;
                     left: 50%;
                     transform: translateX(-50%);
                     width: 50%;
@@ -80,6 +83,13 @@ export default {
                     background-color: rgb(2, 130, 249);
                 }
             }
+        }
+        #jumbo-cnt {
+            height: 280px;
+            background-image: url(/img/jumbotron.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
         }
     }
 </style>
