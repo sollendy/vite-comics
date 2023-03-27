@@ -17,19 +17,21 @@
 
     <div class="albi">
         <img :src="img" alt="fumetto">
-        <!-- <div class="prezzo">{{prezzo}}</div> -->
+        <div class="prezzo">{{prezzo}}</div>
         <div class="serie">{{serie}}</div>
-        <!-- <div class="tipologia">{{tipologia}}</div> -->
+        <div class="tipologia">{{tipologia}}</div>
     </div>
 
 </template>
 
 <style lang="scss">
     .albi {
-        width: 150px;
-        padding: 10px;
+        width: 130px;
+        padding: 10px 10px;
+        font-size: small;
         img {
-            width: calc(100% );
+            width: 100%;
+            height: 60%;
         }
     }
 </style>
