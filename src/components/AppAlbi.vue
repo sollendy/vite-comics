@@ -14,19 +14,17 @@
 </script>
 
 <template>
-
     <div class="albi">
         <img :src="img" alt="fumetto">
         <div class="prezzo">{{prezzo}}</div>
         <div class="serie">{{serie}}</div>
         <div class="tipologia">{{tipologia}}</div>
     </div>
-
 </template>
 
 <style lang="scss">
     .albi {
-        width: 130px;
+        width: calc(100% / 6);
         padding: 10px 10px;
         font-size: small;
         // display: flex;

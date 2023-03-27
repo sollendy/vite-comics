@@ -113,11 +113,12 @@
 
 <template>
     <div id="corpo-pagina">
-
-    <div id="comic-cont">
-        <AppAlbi v-for="albo in albi" :img="albo.thumb" :prezzo="albo.price" :serie="albo.series" :tipologia="albo.type"></AppAlbi>
-    </div>
-
+        <div id="comic-cont">
+            <AppAlbi v-for="albo in albi" :img="albo.thumb" :prezzo="albo.price" :serie="albo.series" :tipologia="albo.type"></AppAlbi>
+            <!-- <div class="mostra">
+                MOSTRA ALTRO
+            </div> -->
+        </div>
     </div>
     <div id="barra-celeste">
         <ul>
@@ -133,6 +134,8 @@
 
 <style lang="scss" scoped>
     #corpo-pagina {
+        background-color: black;
+        color: white;
         #comic-cont {
             width: 80%;
             margin: 0 auto;
@@ -141,9 +144,9 @@
             // img {
             //     width: 100px;
             // }
+
         }
-        background-color: black;
-        color: white;
+
     }
     #barra-celeste {
         background-color: rgb(0, 78, 146);
